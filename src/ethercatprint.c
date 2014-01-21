@@ -48,9 +48,9 @@
  */
 
 #include <stdio.h>
-#include "oshw.h"
-#include "ethercattype.h"
-#include "ethercatmain.h"
+#include "ethercat_soem/oshw.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/ethercatmain.h"
 
 #define EC_MAXERRORNAME 127
 

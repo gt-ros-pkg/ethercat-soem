@@ -25,7 +25,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "oshw.h"
+#include "ethercat_soem/oshw.h"
 
 /**
  * Host to Network byte order (i.e. to big endian).

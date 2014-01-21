@@ -79,8 +79,8 @@
 #include <netpacket/packet.h>
 #include <pthread.h>
 
-#include "oshw.h"
-#include "osal.h"
+#include "ethercat_soem/oshw.h"
+#include "ethercat_soem/osal.h"
 
 /** Redundancy modes */
 enum

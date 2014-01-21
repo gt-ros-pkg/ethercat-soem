@@ -52,11 +52,11 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "osal.h"
-#include "oshw.h"
-#include "ethercattype.h"
-#include "ethercatbase.h"
-#include "ethercatmain.h"
+#include "ethercat_soem/osal.h"
+#include "ethercat_soem/oshw.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/ethercatbase.h"
+#include "ethercat_soem/ethercatmain.h"
 
 
 /** delay in us for eeprom ready loop */

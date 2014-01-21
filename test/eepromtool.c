@@ -21,14 +21,14 @@
 #include <unistd.h>
 #include <time.h>
 
-#include "ethercattype.h"
-#include "nicdrv.h"
-#include "ethercatbase.h"
-#include "ethercatmain.h"
-#include "ethercatcoe.h"
-//#include "ethercatfoe.h"
-//#include "ethercatconfig.h"
-//#include "ethercatprint.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/nicdrv.h"
+#include "ethercat_soem/ethercatbase.h"
+#include "ethercat_soem/ethercatmain.h"
+#include "ethercat_soem/ethercatcoe.h"
+//#include "ethercat_soem/ethercatfoe.h"
+//#include "ethercat_soem/ethercatconfig.h"
+//#include "ethercat_soem/ethercatprint.h"
 
 #define MAXBUF 32768
 #define STDBUF 2048

@@ -61,24 +61,52 @@ catkin_package(
 
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
-# include_directories(include)
+include_directories(include)
 
-## Declare a cpp library
-# add_library(ethercat_soem
-#   src/${PROJECT_NAME}/ethercat_soem.cpp
-# )
+add_library(ethercat_soem
+  include/ethercat_soem/osal.h
+  include/ethercat_soem/oshw.h
+  include/ethercat_soem/nicdrv.h
+  include/ethercat_soem/ethercattype.h
+  include/ethercat_soem/ethercatsoe.h
+  include/ethercat_soem/ethercatprint.h
+  include/ethercat_soem/ethercatmain.h
+  include/ethercat_soem/ethercatfoe.h
+  include/ethercat_soem/ethercatdc.h
+  include/ethercat_soem/ethercatconfiglist.h
+  include/ethercat_soem/ethercatconfig.h
+  include/ethercat_soem/ethercatcoe.h
+  include/ethercat_soem/ethercatbase.h
+  src/osal.c
+  src/oshw.c
+  src/nicdrv.c
+  src/ethercatsoe.c
+  src/ethercatprint.c
+  src/ethercatmain.c
+  src/ethercatfoe.c
+  src/ethercatdc.c
+  src/ethercatconfig.c
+  src/ethercatcoe.c
+  src/ethercatbase.c
+)
 
-## Declare a cpp executable
-# add_executable(ethercat_soem_node src/ethercat_soem_node.cpp)
+target_link_libraries(ethercat_soem pthread rt)
 
-## Add cmake target dependencies of the executable/library
-## as an example, message headers may need to be generated before nodes
-# add_dependencies(ethercat_soem_node ethercat_soem_generate_messages_cpp)
+add_executable(simple_test test/simple_test.c)
+add_executable(red_test test/red_test.c)
+add_executable(firm_update test/firm_update.c)
+add_executable(eepromtool test/eepromtool.c)
+add_executable(ebox test/ebox.c)
+add_executable(aliastool test/aliastool.c)
+add_executable(slaveinfo test/slaveinfo.c)
 
-## Specify libraries to link a library or executable target against
-# target_link_libraries(ethercat_soem_node
-#   ${catkin_LIBRARIES}
-# )
+target_link_libraries(simple_test ethercat_soem)
+target_link_libraries(red_test ethercat_soem)
+target_link_libraries(firm_update ethercat_soem)
+target_link_libraries(eepromtool ethercat_soem)
+target_link_libraries(ebox ethercat_soem)
+target_link_libraries(aliastool ethercat_soem)
+target_link_libraries(slaveinfo ethercat_soem)
 
 #############
 ## Install ##

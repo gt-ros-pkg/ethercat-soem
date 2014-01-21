@@ -21,14 +21,14 @@
 #include <pthread.h>
 #include <math.h>
 
-#include "ethercattype.h"
-#include "nicdrv.h"
-#include "ethercatbase.h"
-#include "ethercatmain.h"
-#include "ethercatcoe.h"
-#include "ethercatconfig.h"
-#include "ethercatdc.h"
-#include "ethercatprint.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/nicdrv.h"
+#include "ethercat_soem/ethercatbase.h"
+#include "ethercat_soem/ethercatmain.h"
+#include "ethercat_soem/ethercatcoe.h"
+#include "ethercat_soem/ethercatconfig.h"
+#include "ethercat_soem/ethercatdc.h"
+#include "ethercat_soem/ethercatprint.h"
 
 #define NSEC_PER_SEC 1000000000
 #define EC_TIMEOUTMON 500

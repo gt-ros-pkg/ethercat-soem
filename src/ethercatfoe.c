@@ -49,12 +49,12 @@
 
 #include <stdio.h>
 #include <string.h>
-#include "osal.h"
-#include "oshw.h"
-#include "ethercattype.h"
-#include "ethercatbase.h"
-#include "ethercatmain.h"
-#include "ethercatfoe.h"
+#include "ethercat_soem/osal.h"
+#include "ethercat_soem/oshw.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/ethercatbase.h"
+#include "ethercat_soem/ethercatmain.h"
+#include "ethercat_soem/ethercatfoe.h"
 
 #define EC_MAXFOEDATA 512
 

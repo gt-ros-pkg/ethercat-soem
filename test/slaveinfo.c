@@ -14,14 +14,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "ethercattype.h"
-#include "nicdrv.h"
-#include "ethercatbase.h"
-#include "ethercatmain.h"
-#include "ethercatconfig.h"
-#include "ethercatcoe.h"
-#include "ethercatdc.h"
-#include "ethercatprint.h"
+#include "ethercat_soem/ethercattype.h"
+#include "ethercat_soem/nicdrv.h"
+#include "ethercat_soem/ethercatbase.h"
+#include "ethercat_soem/ethercatmain.h"
+#include "ethercat_soem/ethercatconfig.h"
+#include "ethercat_soem/ethercatcoe.h"
+#include "ethercat_soem/ethercatdc.h"
+#include "ethercat_soem/ethercatprint.h"
 
 char IOmap[4096];
 ec_ODlistt ODlist;
