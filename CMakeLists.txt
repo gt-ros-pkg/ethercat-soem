@@ -92,13 +92,13 @@ add_library(ethercat_soem
 
 target_link_libraries(ethercat_soem pthread rt)
 
-add_executable(simple_test test/simple_test.c)
-add_executable(red_test test/red_test.c)
-add_executable(firm_update test/firm_update.c)
-add_executable(eepromtool test/eepromtool.c)
-add_executable(ebox test/ebox.c)
-add_executable(aliastool test/aliastool.c)
-add_executable(slaveinfo test/slaveinfo.c)
+add_executable(simple_test scripts/simple_test.c)
+add_executable(red_test scripts/red_test.c)
+add_executable(firm_update scripts/firm_update.c)
+add_executable(eepromtool scripts/eepromtool.c)
+add_executable(ebox scripts/ebox.c)
+add_executable(aliastool scripts/aliastool.c)
+add_executable(slaveinfo scripts/slaveinfo.c)
 
 target_link_libraries(simple_test ethercat_soem)
 target_link_libraries(red_test ethercat_soem)
